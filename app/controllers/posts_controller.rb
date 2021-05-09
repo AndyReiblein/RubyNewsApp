@@ -2,25 +2,25 @@ class PostsController < ApplicationController
   def index
   end
 
-  def show
-  end
+#   def show
+#   end
 
-  def new
-  end
+#   def new
+#   end
 
-  def edit
-  end
+#   def edit
+#   end
 
-  def create 
-      post = Post.new(post_params)
-      post.save
-      redirect_to root_path
-  end
+#   def create 
+#       post = Post.new(post_params)
+#       post.save
+#       redirect_to root_path
+#   end
 
-  private
+#   private
 
-  def post_params
-      params.require(:post).permit(:title, :description)
-  end
+#   def post_params
+#       params.require(:post).permit(:title, :description)
+#   end
 
 end
